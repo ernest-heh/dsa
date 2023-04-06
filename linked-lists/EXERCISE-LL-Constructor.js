@@ -1,17 +1,17 @@
-// WRITE NODE CLASS HERE //
-//                       //
-//                       //
-//                       //
-//                       //
-///////////////////////////
+class Node {
+  constructor(value) {
+    this.value = value
+    this.next = null
+  }
+}
 
 class LinkedList {
-	// WRITE LL CONSTRUCTOR HERE //
-	//                           //
-	//                           //
-	//                           //
-	//                           //
-	///////////////////////////////
+	constructor(value) {
+    const newNode = new Node(value)
+    this.head = newNode
+    this.tail = this.head
+    this.length = 1
+  }
 
     printList() {
         let temp = this.head;
@@ -46,7 +46,7 @@ class LinkedList {
 
 function test() {
     let myLinkedList = new LinkedList(4);
-    
+
     myLinkedList.getHead();
     myLinkedList.getTail();
     myLinkedList.getLength();
@@ -64,7 +64,7 @@ test();
     Head: 4
     Tail: 4
     Length: 1
-    
+
     Linked List:
     4
 
